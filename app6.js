@@ -1,6 +1,6 @@
 const express = require ('express');
 const path = require ('path');
-const bodyParser = requie('bodyParser');
+const bodyParser = requie('body-parser');
 const app = express();
 app.use('/public', express.static(path.join(__dirname, 'static')));
 app.use(bodyParser.urlencoded({extended: false}));
